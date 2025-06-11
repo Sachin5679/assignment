@@ -7,7 +7,7 @@ export default function SignInPage() {
       <div className="p-6 bg-white rounded shadow">
         <h1 className="mb-4 text-xl font-bold">Sign In</h1>
         <button
-          onClick={() => signIn('google')}
+          onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
           className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
         >
           Sign in with Google
